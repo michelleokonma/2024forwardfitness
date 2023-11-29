@@ -1,0 +1,207 @@
+   /*
+author: michelle
+file name: styles css
+date: 11/3/2023
+*/
+
+/* fonts
+
+font-family: 'Francois One', sans-serif;
+font-family: 'Roboto Slab', serif;
+
+   fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100;200;400;900&display=swap');
+
+/* css reset */
+
+body, header, nav, footer, main, h1, div, img, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* body */
+
+body {
+	background-color: #1A1619;
+}
+
+/* images */
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* mobile viewport */
+
+
+/*  header */
+
+header {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: #1A1619;
+	height: 190px;
+}
+
+header img {
+	margin: 0 auto;
+}
+
+/*  nav */
+
+nav {
+	padding: 1%;
+	margin-bottom: 1%;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+nav li {
+	font-size: 1.5em;
+	font-family: 'Francois One', sans-serif;
+	border-top: 1px solid #DBD1D7;
+}
+
+nav li:first-child {
+	border-top: none;
+}
+
+nav li a {
+	display: block;
+	color: #F9EEF4;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+/*  main */
+
+main {
+	clear: both;
+	background-color: #F9EEF4;
+	padding: 2%;
+	font-size: 1.15em;
+	font-family: 'Roboto Slab', serif;
+}
+	
+.tel-link {
+	background-color: #30242;
+	padding: 2%;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 15px;
+}
+
+.tel-link a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+
+.hours {
+	margin-left: 10%;
+	
+}
+
+.action {
+	font-size: 1.35em;
+	color: #F3BEDB;
+}
+
+#weights, #cardio, #training {
+	width: 29%;
+	float: left;
+	margin: 0 2%;
+}
+
+.round {
+	barder-radius: 8px;
+}
+
+/* tablet viewport: show tablet-desktop, class, hide mobile class */
+
+.tablet-desktop class {
+	display: block;
+}
+
+.mobile {
+	display: none;
+}
+
+/* tablet viewport: style rule for header */
+
+header {
+	position: static;
+	padding-bottom: 2%;
+}
+
+/* tablet viewport: style rules for nav area */
+
+nav li {
+	border-top: none;
+	display: inline-block;
+	border-right: 1px solid #fff;
+}
+
+nav li:last-child {
+	border-right: none;
+	
+}
+/*
+#exercises {
+	clear: left;
+	border-top: 1px solid #1A1619;
+	border-bottom: 1px solid #1A1619;
+	background-color: #DBD1D7;
+	padding: 1% 2%;
+}
+
+#exercises dt {
+	font-weight: bold;
+}
+
+#exercises dd {
+	padding: 0.5% 1% 2% 0%;
+}
+*/
+
+.external-link {
+	color: #B8799B;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#contact .contact-email-link {
+	text-align: center;
+	color: #F3BEDB;
+	text-decoration: none;
+}
+
+.map {
+	border: 4px dotted #E0ABCB;
+	border-radius: 5px;
+	width: 95%;
+	height: 50;
+}
+
+/*  footer */
+
+footer p {
+	font-size: 0.75em;
+	text-align: center;
+	color: #F9EEF4;
+	padding: 0 1em;
+}
+
+footer p a {
+	color: #F9EEF4;
+	text-decoration: none;
+}
