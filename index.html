@@ -1,74 +1,137 @@
 <!doctype html>
 <!--
-HTML COMMENTS
-File Name: index.html
-Students Name: michellelelelelelel
+	HTML COMMENTS
+	FILE NAME: index.html - Forward Fitness Site
+	Student's Name: michelle
 -->
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Forward Fitness Club</title>
-	<link rel="stylesheet" href="css/styles.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<title>Foward Fitness Club</title>
+		<link rel="stylesheet" href="css/styles.css" media="screen">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut.icon" href="images/favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+	</head>
 
-<body>
-	<div id="container">
-		<!-- header comment -->
-			<header>
-				<a href="index.html">
-					<img src="images/forward-fitness-logo.png" alt="FFC Logo">
+	<body>
+		
+		<div id="container">
+			
+			<!-- MOBIL NAV-->
+			<nav class="mobile-nav">
+				<div id="manu-links">
+					<a href="index.html">Home</a>
+					<a href="about.html">About Us</a> 
+					<a href="classes.html">Classes</a> 
+					<a href="nutrition.html">Nutrition</a> 
+					<a href="contact.html">Contact Us</a> 
+				</div>
+				<a class="menu-icon" onclick="hamburger()">
+					<div>&#9776;</div>
 				</a>
+			</nav>
+			<!-- HEADER CONTENT -->
+			<header id="fcc-logo">
+				<a href="index.html"><img src="images/forward-fitness-logo.png" alt="FFC Logo"></a>
 			
 			</header>
+			
+			<!-- Tablet desktop nav-->
+			<nav class="tablet-desktop">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li> 
+					<li><a href="classes.html">Classes</a></li> 
+					<li><a href="nutrition.html">Nutrition</a></li> 
+					<li><a href="contact.html">Contact Us</a></li> 
+				</ul>
+			</nav>
 
-		<!-- nav comment -->
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About Us</a></li>
-				<li><a href="nutrition.html">Nutrition</a></li>
-			    <li><a href="classes.html">Classes</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
-			</ul>
-		</nav>
-		
-		<!-- hero image -->
-		<div id="hero" class="tablet-desktop">
-			<img src="images/hero-image.jpg" alt="left arm extended holding a weight">
-		</div>
-		<!-- main comment -->
+			<!-- NAVIGATION SECTION -->
+			
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li> 
+					<li><a href="classes.html">Classes</a></li> 
+					<li><a href="nutrition.html">Nutrition</a></li> 
+					<li><a href="contact.html">Contact Us</a></li> 
+				</ul>
+			</nav>
+
+			<!-- HERO IMG -->
+			
+			<div id="hero">
+				<img src="images/hero-image.jpg" alt="left arm extended holding a weight">
+			</div>
+			
+			<!-- MAIN PAGE CONTENT -->
+			
 		<main>
 			
-		<div class="mobile">
 			<p>Welcome to Forward Fitness Club. Our mission is to help our clients meet their fitness and nutrition goals.</p>
 			
-			<h3>Free One-Week Trial Membership!</h3>
-			<p>Call Us Today to Get Started</p>
-			<p lass="tel-link">
-				<a href="tel:8145559608">(814) 555-9608</a>
-			</p>
-			<h4>Fitness Club Hours:</h4>
-			<ul class="hours">
-				<li>Mon-Thu: 6:00am - 6:00pm</li>
-				<li>Friday: 6:00am - 4:00pm</li>
-				<li>Saturday: 6:00am - 6:00pm</li>
-				<li>Sunday: Closed MF</li>
-			</ul>
-		</div>
-			<div class="tablet-desktop">
-				<p>If you have struggled with getting healthy and need the motivation and recources to make a healthy lifestyle change, contact us today. Our factility includes state-of-the-art equipment, convenient group training classes, and nutrition tips and information to keep you healthy.</p>
-
-				<p>We provide a FREE one-week membership so you can expeirence the benefits of our equipment and facility. The one-week trial gives you complete access to our equipment, training classes, and nutrition planning. Contact us today to <span class="action">start your free trial!</span></p>
-			</div>
-		</main>
-		<!-- footer commnet -->
-		<footer>
-			<p>&copy; Copyright 2023. All Right Reserved.</p>
-				<p><a href="mailto:forwardfittnes@club.net">Email us!</a>
-		 	</p>
-		</footer>
+			<div class="mobile">
 		
-	</div>
-</body>
+				<h3>FREE One-Week Trial Membership!</h3>
+				<p><a href="tel: 8145559608">Call us today to get started</a></p>
+
+				<h4>Fitness Club Hours:</h4>
+				<p>Monday - Thursday: 6:00am - 6:00 pm<br>
+				Friday: 6:00am - 4:00pm<br>
+				Saturday: 8:00am - 6:00pm<br>
+				Sunday: Closed</p>
+			
+			</div>
+
+				<div class="tablet-dekstop">
+
+					<p>If you have struggle with getting healthy and need the motivation and resources to make a healthy lifestyle change, contact us today. Our facility includes state-of-the-art equiptment, convenient group training classes, and nutrition tips and information to keep you healthy.</p>
+
+					<p>We provide FREE one-week membership so you can experience the benefits  of our equiptment and facility. This one-week trial give you complete access to our equiptment, training classes, and nutrition planning. Contact us today to <span class="action">start your free trial!</span></p>
+				</div>
+			</main>
+			
+			<div class="grid">
+				<figure class="frame">
+					<a href="classes.html"><img src="images/fitness-group.jpg" alt="group of fitness people"></a>
+					
+					<figcaption class="pic-text">Group Fitness</figcaption>
+				</figure>
+				
+				<figure class="frame">
+					<a href="nutrition.html"><img src="images/food-heart.jpg" alt="healthy food"></a>
+					
+					<figcaption class="pic-text"> Meal Plans</figcaption>
+				</figure>
+				
+				<figure class="frame">
+					<a href="contact.html"><img src="images/personal-trainer.jpg" alt="personal trainer with a clipboard"></a>
+						
+					<figcaption class="pic-text">Start today</figcaption>
+				</figure>
+			</div>
+
+			<!-- FOOTER SECTION -->
+			<footer>
+				
+				<div class="copyright">
+					<p>&copy; Copyright 2023. All Right Reserved.</p>
+					<p><a href="mailto:forwardfitness@club.net">Email Us</a></p>
+				</div>
+				
+				<div class="social">
+				
+					<a href="https://www.facebook.com/fwdfitclub" target="_blank"><img src="media/facebook-logo.png" alt="black and white facebook logo"></a>
+				
+				</div>
+			</footer>
+		</div>
+		
+		<script src="css/scripts.js"></script>
+		
+	</body>
 </html>

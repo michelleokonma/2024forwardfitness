@@ -1,8 +1,8 @@
 <!doctype html>
 <!--
 	HTML COMMENTS
-	FILE NAME: about.html
-	Student's Name: chelle
+	FILE NAME: index.html - Forward Fitness Site
+	Student's Name: michelle
 -->
 <html lang="en">
 	<head>
@@ -10,11 +10,28 @@
 		<title>Foward Fitness Club</title>
 		<link rel="stylesheet" href="css/styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut.icon" href="images/favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
 	</head>
 
 	
 	<body>
 		<div id="container">
+			<!-- MOBIL NAV-->
+			<nav class="mobile-nav">
+				<div id="manu-links">
+					<a href="index.html">Home</a>
+					<a href="about.html">About Us</a> 
+					<a href="classes.html">Classes</a> 
+					<a href="nutrition.html">Nutrition</a> 
+					<a href="contact.html">Contact Us</a> 
+				</div>
+				<a class="menu-icon" onclick="hamburger()">
+					<div>&#9776;</div>
+				</a>
+			</nav>
 		<!-- HEADER CONTENT -->
 			<header>
 				<a href="index.html">
@@ -27,10 +44,10 @@
 			<nav>
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="nutrition.html">Nutrition</a></li>
-					<li><a href="classes.html">Classes</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="about.html">About Us</a></li> 
+					<li><a href="classes.html">Classes</a></li> 
+					<li><a href="nutrition.html">Nutrition</a></li> 
+					<li><a href="contact.html">Contact Us</a></li> 
 				</ul>
 			</nav>
 
@@ -38,17 +55,23 @@
 
 			<main>
 				
-				
+				<video controls poster="images/hero-image.jpg">
+					<source src="media/ffc_video.mp4" type="video/mp4">
+					<source src="media/fcc_video.webm" type="video/web">
+					<track src="media/captions.vtt" kind="captions" srclang="en" label="Captions">
+					<track src="media/descriptions.vtt" kind="descriptions" srclang="en" label="English Descriptions">
+					<p>YOUR BROWSER IS poopy</p>
+				</video>
 				
 				<div id="weights">
 					<h1>Weights</h1>
 					
-					<img src="images/people-with-weights.jpg" alt="Two people working out with weights in each hand" height="300" width="450" class="round">
+					<img src="images/people-with-weights.jpg" alt="Two people working out with weights in each hand" class="round">
 					
-					<p>Our facility includes a weight training area with several weight options. Build lean muscle with weights and improve your core with weight training.</p>
+					<p>Our facility inclueds a weight training area with several weight options. Build lean muscle with weights and improve your core with weight training.</p>
 					
 					<ul class="tablet-desktop">
-						<li>Dumbbells</li>
+						<li>Dumbells</li>
 						<li>Kettlebells</li>
 						<li>Barbells</li>
 					</ul>
@@ -58,7 +81,7 @@
 					
 				<div id="cardio">
 						<h1>Cardio</h1>
-						<img class="equip round" src="images/people-workingout-machines.jpg" alt="People working out on machines" height="300" width="450">
+						<img class="round" src="images/people-workingout-machines.jpg" alt="People working out on machines">
 						
 						<p>Burn fat through cardio workours. Experts reccomend 150 minutes of cardio each week. We have several equipment choices for your workout.</p>
 						
@@ -69,12 +92,12 @@
 						</ul>
 					</div>
 				
-				<div id="training">
+				<div class="training">
 					<h1>Personal Training</h1>
-					<img class="equip round" src="images/personal-trainer.jpg" alt="Personal Training" height="300">
+					<img class="round" src="images/personal-trainer.jpg" alt="Personal Training">
 					
 					<p>Our certified personal trainers wrok with you to help you obtain your fitness goals and track your progress. Personal training has many benefits.</p>
-					
+
 					<ul class="tablet-desktop">
 						<li>Accountability</li>
 						<li>Personalized Program</li>
@@ -82,30 +105,39 @@
 					</ul>
 				</div>
 				
-				<div id="exercises">
+				<div id="exercises" class="tablet-desktop">
 					<h1>Common Exercises</h1>
 					<p>The following are common exercises that we encourage our clients to do as part of their daily exercise routine.</p>
 					
 					<dl>
 						<dt>Burpee</dt>
-						<dd>Burpees are a great, full body exercise to increase your strength and endurance. Begin in a standing position, drop into a squat and extend forward again quickly, and then jump up from a squatted position.</dd>
+						<dd>Burpees are a great, full body exercise to increase your strength and endurance. Begin in a standing position, drop into a squat and extend forward again quickly, and then jump up from a squatted position. <span class="viewer" onclick="burpees()"> View Example.</span></dd>
 						
 						<dt>Plank</dt>
-						<dd>Planks build your core strength. To perform a plank, get in a push up position and rest your forearms on the floor, Hold the position as long as you can.</dd>
+						<dd>Planls build your core strength. To perform a plank, get in a push up position and rest your forearms on the floor, Hold the position as long as you can. <span class="viewer" onclick="plank()"> View Example.</span></dd>
 						
 						<dt>Mountain Climber</dt>
-						<dd>Mountain climbers are a good cardio exercise. Place your hands on the floor in a push up position, then bring one knee up to your chest and then swing as quickly as you can (as though you are climbing a mountain).</dd>
+						<dd>Mountain climbers are a good cardio exercise. Place your hands on the floor in a push up position, then bring one knee up to your chest and then swing as quickly as you can (as though you are climbing a mountain). <span class="viewer" onclick="mountain()"> View Example.</span></dd>
 						
 					</dl>
-					<p>For more information about how to stay active, visit <a href="https://health.gov/pcsfn" target="_blank" class="external-link">U.S. Department of Health and Human Services</a>.</p>
+					
+					<video controls id="example">
+						<source id="vid-src" src="vid" type="video/mp4">
+						<track id="despsrc" src="des" kind="descriptions" srclang="en" label="English Descriptions">
+						<p>Your browser does not support the video element.</p>
+					</video>
+					<p>For more information about how to stay active, visit <a href="https://health.gov/pcsfn" target="_blank" class="external-link">U.S. Department of Health and Human Services.</a>.</p>
 				</div>
 			</main>
 
 		<!-- FOOTER SECTION -->
 			<footer>
-				<p>&copy; Copyright 2023. All Right Reserved.</p>
-				<p><a href="mailto:forwardfitness@club.net">Email Us</a></p>
+			<p>&copy; Copyright 2023. All Right Reserved.</p>
+			<p><a href="mailto:forwardfitness@club.net">Email Us</a></p>
 			</footer>
-		</div>
+		</div>	
+		
+		<script src="css/scripts.js"></script>
+		
 	</body>
 </html>

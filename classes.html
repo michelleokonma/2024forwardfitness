@@ -1,43 +1,144 @@
 <!doctype html>
 <!--
-HTML COMMENTS
-File Name: classes.html
-Students Name: michelle
+	HTML COMMENTS
+	FILE NAME: index.html - Forward Fitness Site
+	Student's Name: michelle
 -->
-<html Lang="en">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Forward Fitness Club</title>
-		<link rel="stylesheet" href="css/styles.css">
+		<title>Foward Fitness Club</title>
+		<link rel="stylesheet" href="css/styles.css" media="screen">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut.icon" href="images/favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
 	</head>
 
-<body>
-	<!-- header comment -->
-	<header>
-		<a href="index.html">
-			<img src="images/forward-fitness-logo.png" alt="FFC Logo">
-		</a>
-	</header>
-	<!-- nav comment -->
-	<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About Us</a></li>
-				<li><a href="nutrition.html">Nutrition</a></li>
-			    <li><a href="classes.html">Classes</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
-			</ul>
-	</nav>
-	<!-- main comment -->
-	<main>
-	
-	</main>
-	<!-- footer commnet -->
-	<footer>
-		<p>&copy; Copyright 2023. All Right Resrved.</p>
-		<p> forwardfittnes@club.net</p>
-	</footer>
-</body>
-</html>
+	<body>
+		
+		<div id="container">
+			<!-- MOBIL NAV-->
+			<nav class="mobile-nav">
+				<div id="manu-links">
+					<a href="index.html">Home</a>
+					<a href="about.html">About Us</a> 
+					<a href="classes.html">Classes</a> 
+					<a href="nutrition.html">Nutrition</a> 
+					<a href="contact.html">Contact Us</a> 
+				</div>
+				<a class="menu-icon" onclick="hamburger()">
+					<div>&#9776;</div>
+				</a>
+			</nav>
+			<!-- HEADER CONTENT -->
+			<header id="fcc-logo">
+				<a href="index.html"><img src="images/forward-fitness-logo.png" alt="FFC Logo"></a>
+			
+			</header>
 
+			<!-- NAVIGATION SECTION -->
+			
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li> 
+					<li><a href="classes.html">Classes</a></li> 
+					<li><a href="nutrition.html">Nutrition</a></li> 
+					<li><a href="contact.html">Contact Us</a></li> 
+				</ul>
+			</nav>
+			<!-- Classes HERO IMAGE-->
+			<div id="hero" class="tablet-desktop">
+				<img src="images/classes-hero-image.jpg" alt="group of fitness people">
+			</div>
+			<!-- MAIN PAGE CONTENT -->	
+		<main>
+			<div class="mobile">
+				<h3>Group Fitness Classes</h3>
+				<p>Boot Camp: TR 5am &amp; 5pm</p>
+				<p>Cardio: MWF 6am &amp; 6pm</p>
+				<p>Kickboxing: MWF 8am &amp; 7:15pm</p>
+				<p>Spinning: TR 6am &amp; 6pm</p>
+				<p>Yoga: TR 6am &amp; 6pm</p>
+				<p>Zumba: MWF 7am &amp; 6pm</p>
+			</div>
+			
+			<div class="tablet-desktop">
+				<table> <!-- start of table -->
+					<caption> Group Fitness Class Schedule</caption>
+					<tr><!-- Row 1 -->
+						<th>Class</th>
+						<th>Days</th>
+						<th>Times</th>
+						<th>Instructor</th>
+						<th>Room</th>
+					</tr>
+					<tr> <!-- row 2-->
+						<td>Cardio</td>
+						<td>Mon, Wed, Fri</td>
+						<td>6:00am, 6:00pm</td>
+						<td>Schultz</td>
+						<td>B</td>
+					</tr>
+					<tr> <!--row 3-->
+						<td>Boot camp</td>
+						<td>Tue, Thurs</td>
+						<td>5:00am, 5:00pm</td>
+						<td>Taylor</td>
+						<td>B</td>
+					</tr>
+					<tr><!-- Row 4 -->
+						<td>Spinning</td>
+						<td>Tue, Thurs</td>
+						<td>6:00am, 6:00pm</td>
+						<td>Roberts</td>
+						<td>A</td>
+					</tr>
+					<tr><!-- row 5-->
+						<td>Kickboxing</td>
+						<td>Mon, Wed, Fri</td>
+						<td>8:00am, 7:15pm</td>
+						<td>Lawrence</td>
+						<td>A</td>
+					</tr>
+					<tr><!-- row 6-->
+						<td>Yoga</td>
+						<td>Tue, Thurs</td>
+						<td>6:00am, 6:00pm</td>
+						<td>Schultz</td>
+						<td>B</td>
+					</tr>
+					<tr> <!-- row 7 -->
+						<td>Zumba</td>
+						<td>Mon, Wed, Fri</td>
+						<td>7:00am, 6:00pm</td>
+						<td>Roberts</td>
+						<td>A</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div id="music-sample">
+				<h3>We play upbeat music to help keep you focused during your workout. Below is a sample of tyhe type of music played during a class workout.</h3>
+				
+				<audio controls>
+					<source src="media/ffc_audio.mp3" type="audio/mp3">
+					<source src="media/ffc_audio.ogg" type="audio/ogg">
+					<p>Your browser does not support the audio elemnt. You're fat.</p>
+				</audio>
+			</div>
+			
+		</main>
+			<!-- FOOTER SECTION -->
+			<footer>
+				<p>&copy; Copyright 2023. All Right Reserved.</p>
+				<p><a href="mailto:forwardfitness@club.net">Email Us</a></p>
+			</footer>
+		</div>	
+		
+		<script src="css/scripts.js"></script>
+		
+	</body>
+</html>
